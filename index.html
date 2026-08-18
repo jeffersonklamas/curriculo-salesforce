@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Jefferson Klamas Marzani — Analista Funcional Salesforce</title>
-<meta name="description" content="Currículo de Jefferson Klamas Marzani, Analista Funcional Salesforce em Pinhais, Paraná. Experiência em Salesforce Flow, análise de requisitos, testes E2E e sustentação de plataforma.">
+<meta name="description" content="Currículo de Jefferson Klamas Marzani, Analista Funcional Salesforce em Pinhais, Paraná, Brasil. Experiência em Salesforce Flow, análise de requisitos, testes E2E e sustentação de plataforma.">
 <meta name="robots" content="index, follow">
 <meta name="author" content="Jefferson Klamas Marzani">
 <meta name="keywords" content="Jefferson Klamas Marzani, Analista Funcional Salesforce, Administrador Salesforce, Salesforce Flow, Currículo, Pinhais Paraná Brasil">
@@ -30,7 +30,7 @@
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Jefferson Klamas Marzani",
-  "jobTitle": "Analista Funcional Salesforce / Salesforce Functional Analyst / Business Analyst",
+  "jobTitle": "Analista Funcional Salesforce / Salesforce Functional Analyst / Administrador Salesforce",
   "url": "https://jeffersonklamas.github.io/curriculo-salesforce/",
   "email": "mailto:jeffersonklamas@gmail.com",
   "telephone": "+55-41-99954-8681",
@@ -427,10 +427,64 @@
     header.hero{background:var(--navy) !important; -webkit-print-color-adjust:exact; print-color-adjust:exact;}
     section + section{border-top:none;}
     .flow::before{display:none;}
+    .pdf-bar{display:none !important;}
+  }
+
+  /* ---------- TOP PDF DOWNLOAD BAR ---------- */
+  .pdf-bar{
+    position:sticky;
+    top:0;
+    z-index:50;
+    background:var(--navy-deep);
+    border-bottom:1px solid rgba(47,184,198,0.25);
+  }
+  .pdf-bar-inner{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+    padding:10px 0;
+  }
+  .pdf-bar-label{
+    font-family:var(--font-mono);
+    font-size:12px;
+    color:#AFC3D6;
+    letter-spacing:.02em;
+  }
+  .pdf-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    font-family:var(--font-mono);
+    font-size:13px;
+    font-weight:500;
+    color:var(--navy-deep);
+    background:var(--flow);
+    padding:8px 16px;
+    border-radius:7px;
+    white-space:nowrap;
+    transition:background .15s ease, transform .15s ease;
+  }
+  .pdf-btn:hover{background:#5FD3DF; text-decoration:none; transform:translateY(-1px);}
+  .pdf-btn svg{width:14px; height:14px; flex:0 0 auto;}
+
+  @media (max-width:560px){
+    .pdf-bar-inner{justify-content:center; text-align:center;}
   }
 </style>
 </head>
 <body>
+
+<div class="pdf-bar">
+  <div class="wrap pdf-bar-inner">
+    <span class="pdf-bar-label">Versão compatível com sistemas de recrutamento (ATS)</span>
+    <a class="pdf-btn" href="CV_Jefferson_Klamas_Marzani.pdf" download="CV_Jefferson_Klamas_Marzani.pdf">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M5 21h14"/></svg>
+      Baixar CV em PDF
+    </a>
+  </div>
+</div>
 
 <header class="hero">
   <div class="wrap hero-inner">
@@ -438,7 +492,7 @@
     <h1 class="name">Jefferson Klamas Marzani</h1>
     <p class="role">Analista Funcional Salesforce<span class="sep">|</span>Salesforce Functional Analyst<span class="sep">|</span>Administrador Salesforce</p>
     <div class="contact-bar">
-      <span>Pinhais — Paraná</span>
+      <span>Pinhais — Paraná - Brasil</span>
       <a href="https://wa.me/5541999548681" target="_blank" rel="noopener">(41) 99954-8681 ↗</a>
       <a href="mailto:jeffersonklamas@gmail.com">jeffersonklamas@gmail.com</a>
       <a href="https://linkedin.com/in/jeffersonklamasmarzani" target="_blank" rel="noopener">LinkedIn ↗</a>
